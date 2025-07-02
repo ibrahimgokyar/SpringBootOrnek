@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: jenkins-instance
-          image: ibrahimgokyar/turktelekomrepo:turktelekom-jenkins-instance-13
+          image: ibrahimgokyar/turktelekomrepo:turktelekom-jenkins-instance-14
           imagePullPolicy: Always
           ports:
             - containerPort: 8085

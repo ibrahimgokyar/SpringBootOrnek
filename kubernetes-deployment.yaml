@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jenkins-instance-deployment
+spec:
+  selector:
+    matchLabels:
+      app: jenkins-instance
+  template:
+    metadata:
+      labels:
+        app: jenkins-instance
+    spec:
+      containers:
+        - name: jenkins-instance
+          image: ibrahimgokyar/turktelekomrepo:turktelekom-jenkins-instance-13
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8085
